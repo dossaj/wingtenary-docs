@@ -1,0 +1,22 @@
+{
+  "name": "wingtenary-docs",
+  "version": "1.0.0",
+  "description": "Wingtenary Design",
+  "scripts": {
+    "build": "foreach -g \"*/*.drawio\" -x \"drawio-export-cli #{path} static/images/#{name}.svg\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dossaj/wingtenary-docs.git"
+  },
+  "author": "Jason Dos Santos <jason.dos.santos@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dossaj/wingtenary-docs/issues"
+  },
+  "homepage": "https://github.com/dossaj/wingtenary-docs#readme",
+  "devDependencies": {
+    "drawio-export-cli": "github:dossaj/drawio-export-cli#master",
+    "foreach-cli": "^1.8.1"
+  }
+}
