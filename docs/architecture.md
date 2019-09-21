@@ -1,3 +1,9 @@
 # Architecture
 
-![architecture](/static/images/architecture.page-1.svg)
+## System Architecture
+
+![architecture](/static/images/architecture.system.svg)
+
+## Service Architecture
+
+![architecture](/static/images/architecture.service.svg)

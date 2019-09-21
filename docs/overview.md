@@ -42,7 +42,7 @@ The use of docker containers would be used for ease of deployments and flexibili
 The assumptions here are applied to all sections
 
 - The product will have a certain level of infrastructure/platform provided to the product, whether this is through cloud services or on premise hosting.
-- Service Bus - A form of messaging whether this is provided by Azure, AWS, RabbitMQ or MSMQ etc.
+- Service Bus - A form of messaging service, whether this is provided by Azure, AWS, RabbitMQ or MSMQ etc.
 - Identity - An OIDC/OAuth compliant service allowing for the issuing of *id_tokens* and *access_tokens*.
 - Shielding - An appropriate IDS is in place, to protect against DOS and D-DOS attempts, whether it be RedShield, Palo-Alto etc.
 - Security - All application are in the correct network security groups. Publicly accessible web servers are in different network security groups etc.
@@ -50,8 +50,8 @@ The assumptions here are applied to all sections
 - This design does not cover auditing, logging and analytics.
 - This design assumes all tooling is provided.
 - The services should be scalable and be able to run in HA.
-- Not accessible to the internet, means not publicly accessible and that the hosting can still be provided over an internet connection, for example, a VPN.
-- Mobile App is not in scope.
+- Not accessible to the internet, is assumed to mean not publicly accessible, and that the hosting can still be provided over an internet connection, for example, a VPN.
+- Mobile application is not in scope.
 
 ## Testing
 
@@ -59,21 +59,23 @@ The testing strategy is defined into the categories of unit tests, integration t
 
 Unit tests are the primary line of defence with the use of XUnit, all services and logic is tested to a standard. Unit tests run on every merge request.
 
-The integration tests are coved using BDD. Using SpecFlow and Gherkin. These cover the API's versioning and provide confidence the nothing as broken to a connecting client. These tests can check security but are not designed to test business logic, just the behavior expected.
+The integration tests are coved using BDD. Using SpecFlow and Gherkin. These cover the API's versioning and provide confidence the nothing as broken to a connecting client. These tests can check security but are not designed to test business logic, just the expected behavior.
 
-UI tests ensure the UI functions as expected and use a combination of Selenium and SpecFlow. Along with the integration tests these tests should run as often as possible and within reason. Potentially nightly.
+UI tests ensure the UI functions as expected, and use a combination of Selenium and SpecFlow. Along with the integration tests these tests should run as often as possible and within reason.
 
 ## Continuous Delivery
 
-The design assumes the product would have a setup CI/CD pipeline, with automated deployments to the different environments. Each deployment should be triggered at different stages of development. This includes merges, manual intervention etc. The pipeline is assumed to have the appropriate approvals based on the organizational requirements.
+The design assumes the product would include setup of a CI/CD pipeline, with automated deployments to different environments. Each deployment should be triggered at different stages of development. This includes merges, manual intervention etc.
+
+The pipeline is assumed to have the appropriate approvals based on the organizational requirements.
 
 ## Time Estimates
 
-Time estimates are just if each service was being built from scratch. Ideally libraries that do the boiler plate setup would be created and each subsequent service will be quicker to build.
+Time estimates are given as if each service was being built from scratch. Ideally libraries that do the boiler plate setup would be created and each subsequent service will be quicker to build.
 
-Assuming the UI is designed and drawn up ready to go.
+Times assume the UI is designed and drawn up ready to go.
 
-Estimates also include fully production ready system. Also hours include full development time, with a highly focused and capable team of seniors and no distractions. So its probably optimistic :).
+Estimates consider a fully production ready system. Also, hours include full development time, with a highly focused and capable team of seniors and no distractions. So its probably optimistic :). Team sizing would need to be performed.
 
 Time is given in hours as the number of team members can vary.
 
