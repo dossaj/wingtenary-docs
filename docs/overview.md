@@ -52,6 +52,7 @@ The assumptions here are applied to all sections
 - The services should be scalable and be able to run in HA.
 - Not accessible to the internet, is assumed to mean not publicly accessible, and that the hosting can still be provided over an internet connection, for example, a VPN.
 - Mobile application is not in scope.
+- User registration is not in scope.
 
 ## Testing
 
