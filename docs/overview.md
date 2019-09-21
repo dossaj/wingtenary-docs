@@ -22,7 +22,7 @@ Will be covered by each service component in the appropriate sections.
 
 This section will cover the choice of high level technologies.
 
-##### .NET Core
+#### .NET Core
 
 .NET Core provides a large level of flexibility and with the power of a higher level language like C#. It has a large support base as well as libraries and tooling. Some advantages are:
 
@@ -33,7 +33,7 @@ This section will cover the choice of high level technologies.
 - Excellent libraries like Castle, NServiceBus, EF etc
 - Support for modern web tools including Angular and React
 
-##### Containerization
+#### Containerization
 
 The use of docker containers would be used for ease of deployments and flexibility based on the environment being deployed to. Containers provide the ability to deploy a number of different services in the cloud or on premise. App services, Azure Container Instances, Amazon ECS, Kubernetes etc.
 
