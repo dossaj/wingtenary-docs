@@ -30,4 +30,6 @@ This service is covered in more detail [here](dashboard.md).
 
 The flight service is a backend component for airlines to manage their flight schedule it is also broken down into an API and web portal front end. The flight service is the main service providing the airline functionality required. The flight service is responsible for managing the flight, as well as publishing events and notifications of changes.
 
+The usage on this system would be a lot less and can be built for maintainability over performance.
+
 This service is covered in more detail [here](flight.md).
