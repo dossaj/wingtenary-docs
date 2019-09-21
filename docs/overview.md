@@ -104,9 +104,3 @@ Sub-Total                              - 340 hours
 Sub-Total                              - 500 hours
 
 Total                                  - 840 hours
-
-Sizes of team takes into account the overhead of co-ordination and planning etc.
-
-Team x1                                - ~6 months
-Team x2                                - ~4 months
-Team x3                                - ~3 months
