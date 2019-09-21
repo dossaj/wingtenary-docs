@@ -33,3 +33,11 @@ The flight service is a backend component for airlines to manage their flight sc
 The usage on this system would be a lot less and can be built for maintainability over performance.
 
 This service is covered in more detail [here](flight.md).
+
+## Service Architecture
+
+The service architecture is design to keep clean separation of layers.
+
+The service is abstracted from it's host to allow the service within different processes based on necessity. Along with the standard flexibly of each layer.
+
+![service](/static/images/architecture.service.svg)
