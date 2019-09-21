@@ -58,7 +58,7 @@ The assumptions here are applied to all sections
 
 The testing strategy is defined into the categories of unit tests, integration tests and UI tests, with te goal of automating as much of the testing as possible, that align with the companies acceptance of risk.
 
-Unit tests are the primary line of defence with the use of XUnit, all services and logic is tested to a standard. Unit tests run on every merge request.
+Unit tests are the primary line of defence with the use of XUnit, all services and logic is tested to a standard. Unit tests run on every merge request. A TDD approached should be used.
 
 The integration tests are coved using BDD. Using SpecFlow and Gherkin. These cover the API's versioning and provide confidence the nothing as broken to a connecting client. These tests can check security but are not designed to test business logic, just the expected behavior.
 
