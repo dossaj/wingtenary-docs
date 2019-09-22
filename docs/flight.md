@@ -1,6 +1,6 @@
 # Flight Service
 
-The flight service is essentially flight management system, for scheduling flights and any other related information. It also has the responsibility to provide a front end to for airlines to logon to and update flight information. This service is again spilt into a backend API and front-end site.
+The flight service is essentially the flight management system, for scheduling flights and any other related information. It also has the responsibility to provide a front end for airlines to logon to and update flight information. This service is again spilt into a backend API and front-end site.
 
 ### Requirements
 
