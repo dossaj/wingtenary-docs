@@ -16,7 +16,7 @@ The dashboard service is essentially a persisted view of flight information. It 
 
 #### Departure Endpoint
 
-The departure endpoint is designed to retrieve the flight information. This essentially has a flat data model, and queries a database. The endpoint exposes the ability to page the data, potentially OData, and is accessible anonymously.
+The departure endpoint is designed to retrieve the flight information. This essentially has a flat data model and queries a database. The endpoint exposes the ability to page the data, potentially OData, and is accessible anonymously.
 
 An example request
 
@@ -63,15 +63,15 @@ with an example data model
 
 ### Technologies
 
-Since this service is relatively small, could be called a micro service, the tech stack is relatively small and could use a number of different techs to achieve it's purpose. The following has been chosen, but could be changed easily. Backend stack is defined in the overview.
+Since this service is relatively small, could be called a micro service, the tech stack is relatively small and could use a number of different techs to achieve its purpose. The following has been chosen but could be changed easily. Backend stack is defined in the overview.
 
 #### Database
 
-A NoSQL database like MongoDB has been selected, as this service is not a source of truth for data, it also does not need to have relationships, plus light-weight, fast and schema-less can have a powerful advantage. The ability to scale is key for this server.
+A NoSQL database like MongoDB has been selected, as this service is not a source of truth for data, it also does not need to have relationships, plus lightweight, fast and schema-less can have a powerful advantage. The ability to scale is key for this server.
 
 #### Front-End
 
-This could be any front end web tech. Suggested is React or Angular.
+This could be any front-end web tech. Suggested is React or Angular.
 
 ### Data Model
 
