@@ -80,7 +80,7 @@ Estimates consider a fully production ready system. Also, hours include full dev
 
 Time is given in hours as the number of team members can vary.
 
-##### Dashboard Service
+#### Dashboard Service
 
 - Project setup                        - 20 hours
 - Web API                              - 40 hours
@@ -93,7 +93,7 @@ Time is given in hours as the number of team members can vary.
 
 Sub-Total                              - 340 hours
 
-##### Flight Service
+#### Flight Service
 
 - Project setup                        - 20 hours
 - Web API                              - 80 hours
